@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Taintlessness</title>
+	<title>Taintlessness by Odin</title>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet"  href="style.css">
+	<link href="dist/hamburger.css" rel="stylesheet">
 	<!-- <link rel="stylesheet" type="text/css" href="reset.css"> -->
 </head>
 <body>
@@ -11,20 +12,28 @@
 <div class="whitespacetop">
 </div>
 
+<!-- testing area -->
+<button class="hamburger hamburger--collapse amburpos" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+<!-- test area end -->
+
 <div id="header">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-3">
-				<div class="row"><img class="" src="img/logo.png"></div>
+				<div class="row"><img class="logoie" src="img/logo.png"></div>
 				<div class="row font12">Free PSD Website Template</div>
 			</div>
 			<div class="col-lg-5">
 				
 			</div>
-			<div class="col-lg-3">
+			<div class="col-lg-3 searchie">
 				<input class="searchbar" type="text" name="searchbar" value="Search our Website...">
 			</div>
-			<div class="col-lg-1">	
+			<div class="col-lg-1 searchie">	
 				<button class="btn srchbtn">SEARCH</button>
 				
 			</div>
@@ -55,6 +64,26 @@
 	</div>
 </div>
 
+<!-- testing area -->
+
+<div id="menuburger">
+	<div class="container">
+		<div class="row">
+			<ul>
+				<li><a href="#">HOMEPAGE</a></li>
+				<li><a href="#">STYLE DEMO</a></li>
+				<li><a href="#">FULL WIDTH</a></li>
+				<li><a href="#">DROPDOWN</a></li>
+				<li><a href="#">GALLERY</a></li>
+				<li><a href="#">PORTFOLIO</a></li>
+				<li><a href="#">A LINK TEXT</a></li>
+			</ul>
+			
+		</div>
+	</div>
+</div>
+
+<!-- testing area -->
 
 <div id="titles">
 	<div class="container">
@@ -228,7 +257,7 @@
 				
 			</div>
 
-			<div class="col-lg-3">
+			<div class="col-lg-3 formsie">
 				<div class="row">
 					<p class="brownitize f16px">Connect With Us</p>
 				</div>
@@ -239,10 +268,10 @@
 					<img src="img/googleplus.png">
 					<img src="img/wifilogo.png">
 				</div>
-				<div class="row brownitize">
+				<div class="row brownitize newsie">
 					Newsletter
 				</div>
-				<div class="row">
+				<div class="row inputsie">
 					<input type="text" name="email" value="Enter Your Email Here">
 				</div>
 				<div class="row">
@@ -284,6 +313,24 @@
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6SpejpU02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
 </script>
+
+<script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+<script>
+  // Look for .hamburger
+  var hamburger = document.querySelector(".hamburger");
+  // On click
+  hamburger.addEventListener("click", function() {
+    // Toggle class "is-active"
+    hamburger.classList.toggle("is-active");
+    return $('#menuburger').toggle()
+    // Do something else, like open/close menu
+  });
+</script>
+
 
 </body>
 </html>

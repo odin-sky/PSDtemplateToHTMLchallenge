@@ -2,6 +2,16 @@
 html *{
 font-family: 'Cormorant Garamond', serif ;
 }
+.amburpos{
+	position: absolute;
+	z-index: 1;
+	left: 80%;
+	visibility: hidden;
+	
+}
+
+/*HAMBURGER HERE*/
+
 .btn{
 	border-radius: 5px;
 	background-color: #e95a3c;
@@ -138,6 +148,9 @@ font-family: 'Cormorant Garamond', serif ;
 .margtop{
 	margin-top: 12px;
 }
+/*HAMBURGER HERE*/
+
+
 
 #body1 {
 	text-align: center;
@@ -243,5 +256,264 @@ font-family: 'Cormorant Garamond', serif ;
 	margin-bottom: 12px;
 }
 
+#menuburger{
+	display: none;
+}
+
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 768px) {
+#menuburger li{
+	list-style: none;
+
+}
+#menuburger ul {
+	width: 35%;
+	text-align: center;
+	position: absolute;
+	z-index: 1;
+	left: 60%;
+	top: 14%;
+	border: 5px outset;
+	background-color: rgba(255,255,255,0.8);
+	border-radius: 10px;
+	padding: 1px 0 0 5px;
+	margin: 0 auto;
+}
+#menuburger ul li a {
+	text-align: center;
+	color: #e95a3c;
+	text-decoration: none;
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: 400;
+	padding: 5px;
+	margin: 0 auto;
+}
+#menuburger a:hover{
+	background:rgba(255,0,0,0.3);
+	margin: 0 auto;
 
 
+}
+
+	#menubar, .searchie {
+		display: none;
+	}
+
+	.amburpos {
+		visibility: visible;
+		padding: 20px;
+	}
+
+	#bigassimg, #titlebox{
+		position: relative;
+		width: 100%;
+		height: auto;
+	}
+
+	#titlebox, #body1, #body1sub, #body2, #links{
+		text-align: center;
+		margin: 0 auto;
+
+	}
+
+	#body1 p, .f18px{
+		margin: 10px auto;
+		padding: 2% 5%;
+		width: 100%;
+		height: 50%;
+
+	}
+
+	#body1sub {
+		margin-left: 34%;
+		width: 50%;
+		height: 50%;
+	}
+
+	#body2 {
+		margin-left: 27%;
+		width: 50%;
+		height: 50%;
+		padding-left: 7.5%;
+		text-align: center;
+	}
+
+	.smallpics {
+		margin-left: 10px;		
+
+	}
+
+	.margtop {
+		margin-left: 7%;
+	}
+
+	#body1sub button{
+		margin-right: 34%;
+		margin-bottom: 5%;
+	}
+
+	#body2 button{
+		margin-left: 25%;
+		margin-bottom: 5%;
+	}
+
+	#splitpng{
+		display: none;
+	}
+
+	#footers{
+		text-align: center;
+	}
+
+	.bankright{
+		text-align: center;
+	}
+
+	.formsie{
+		margin: 0 auto;
+		width: 60%;
+		text-align: center;
+		border: 1px solid;
+
+
+	}
+	.formsie p{
+		margin: 0 auto;
+		width: 50%;
+		text-align: center;
+	}
+	.formsie button{
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.mediaicons{
+		margin: 0 10%;
+	}
+
+	.newsie{
+		margin: 0 auto;
+		width: 25%;
+	}
+	.inputsie{
+		margin: 0 10%;
+	}
+}
+
+@media (max-width: 480px) {
+
+	#menuburger li{
+	list-style: none;
+}
+
+	#menuburger ul {
+	float: right;
+	text-align: center;
+	position: absolute;
+	z-index: 1;
+	left: 60%;
+	top: 14%;
+	border: 5px outset;
+	background-color: rgba(255,255,255,0.8);
+	padding: 10px;
+	border-radius: 10px;
+
+}
+	#menuburger ul li a{
+	padding: 21px 13px;
+	color: #e95a3c;
+	text-decoration: none;
+	font-size: 20px;
+	padding: 5px;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+
+	#header {
+		margin-left: 25%;
+
+	}
+
+	.font12 {
+		margin-left: 10%;
+	}
+
+	#menubar, .searchie {
+		display: none;
+	}
+
+	.amburpos {
+		visibility: visible;
+		padding: 20px;
+	}
+	#bigassimg, #titlebox{
+		position: relative;
+		width: 100%;
+		height: auto;
+	}
+
+	#body1 p, .f18px{
+		margin: 10px auto;
+		padding: 10% 5%;
+		width: 100%;
+		height: 50%;
+
+	}
+
+	#body1sub, #splitpng, #body2, #borderlast {
+		display: none;
+	}
+
+	#links{
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	#splitpng{
+		display: none;
+	}
+
+	#footers{
+		text-align: center;
+	}
+
+	.bankright{
+		text-align: center;
+	}
+
+	.formsie{
+		margin: 0 auto;
+		width: 60%;
+		text-align: center;
+		border: 1px solid;
+
+
+	}
+	.formsie p{
+		margin: 0 auto;
+		width: 50%;
+		text-align: center;
+	}
+	.formsie button{
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.mediaicons{
+		margin: 0 5%;
+		width: 100%;
+	}
+
+	.newsie{
+		margin: 0 auto;
+		width: 25%;
+	}
+	.inputsie{
+		margin: 0 10%;
+	}
+
+}
